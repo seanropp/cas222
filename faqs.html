@@ -1,0 +1,119 @@
+<!-- 
+File Name: index.html
+Date: 05/02/18
+Programmer: Sean Ropp
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="author" content="Sean Ropp, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Ace in the Hole</title>
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/generic.css" rel="stylesheet" type="text/css">
+<link href="css/grid.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+<div class="topnav" id="myTopnav">
+  <a href="index.html">Home</a>
+  <a href="faqs.html" class="active">FAQs</a>
+  <a href="registration.html">Register</a>
+  <a href="contact.html">Contact</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+    <header>
+        <h1>Heading 1</h1>
+    </header>
+    
+    <main>
+        <h2>Heading 2</h2>
+        <br>
+        <dl>
+            <dt>Question</dt>
+                <dl>Answer</dl>
+            <br>
+            <dt>Question</dt>
+                <dl>Answer</dl>
+            <br>
+            <dt>Question</dt>
+                <dl>Answer</dl>
+            <br>
+            <dt>Question</dt>
+                <dl>Answer</dl>
+        </dl>    
+    
+        <br>
+        
+        <h2>Heading 2</h2>
+        <p>
+        Paragraph.
+        </p>
+        
+        <br>
+        
+        <h2>Image Gallery</h2>
+        <div class="container">
+            <div class="mySlides">
+                <div class="numbertext">1 / 3</div>
+                <img src="images/example-main-image1.jpg" style="width:100%">
+                <!-- <div class="text">Caption Text</div> -->
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2 / 3</div>
+                <img src="images/example-main-image2.jpg" style="width:100%">
+                <!-- <div class="text">Caption Text</div> -->
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 3</div>
+                <img src="images/example-main-image3.jpg" style="width:100%">
+                <!-- <div class="text">Caption Text</div> -->
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+            <div class="row">
+                <div class="column">
+                    <img class="demo cursor" src="images/example-main-image1.jpg" style="width:100%" onclick="currentSlide(1)">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/example-main-image2.jpg" style="width:100%" onclick="currentSlide(2)">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/example-main-image3.jpg" style="width:100%" onclick="currentSlide(3)">
+                </div>
+            </div>   
+        </div>
+<br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+        
+    </main>
+        
+    <footer>
+
+        <p>Social Media Links</p>
+        
+    </footer>
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="scripts/burger.js"></script>
+<script src="scripts/gallery.js"></script>
+    
+</body>
+</html>
