@@ -1,5 +1,5 @@
 <!-- 
-File Name: index.html
+File Name: home.html.php
 Date: 05/02/18
 Programmer: Sean Ropp
 -->
@@ -11,7 +11,7 @@ Programmer: Sean Ropp
 <meta name="author" content="Sean Ropp, initial-scale=1">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Ace in the Hole</title>
+<title>Site Title</title>
 
 <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
 <link href="css/reset.css" rel="stylesheet" type="text/css">
@@ -22,14 +22,9 @@ Programmer: Sean Ropp
 </head>
 
 <body>
-<div class="topnav" id="myTopnav">
-  <a href="index.html" class="active">Home</a>
-  <a href="faqs.html">FAQs</a>
-  <a href="registration.html">Register</a>
-  <a href="contact.html">Contact</a>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-</div>
-
+<div class="main">
+    <?php include 'includes/nav.inc.html.php'; ?>
+    
     <header>
         <h1>Heading 1</h1>
     </header>
@@ -42,45 +37,35 @@ Programmer: Sean Ropp
         <p>
         Paragraph.
         </p>
-    
-    <table id="t01">
-        <caption>Events</caption>
-        <tr>
-            <th>Day</th>
-            <th>Event</th>
-            <th>Time</th>
-            <th>Cost</th>
-        </tr>
-        <tr>
-            <td>Monday</td>
-            <td>Number 1</td>
-            <td>8:00am</td>
-            <td>$10.00</td>
-        </tr>
-        <tr>
-            <td>Tuesday</td>
-            <td>Number 2</td>
-            <td>8:00am</td>
-            <td>$10.00</td>
-        </tr>
-        <tr>
-            <td>Wednesday</td>
-            <td>Number 3</td>
-            <td>8:00am</td>
-            <td>$10.00</td>
-        </tr>
-        <tr>
-            <td>Thursday</td>
-            <td>Number 4</td>
-            <td>8:00am</td>
-            <td>$10.00</td>
-        </tr>
-    </table>
+        
+        <section>
+            <?php include 'includes/tables.inc.html.php'; ?>
+        </section>
+        
+        <br>
+        <hr>
         <br>
         <h2>Heading 2</h2>
         <p>
         Paragraph.
         </p>
+        <section>
+            <?php include 'includes/gallery.inc.html.php'; ?>
+        </section>
+            
+        <br>
+        <hr>
+        <br>
+        <section>
+            <?php include 'includes/form.inc.html.php'; ?>
+        </section>
+        
+        <br>
+        <hr>
+        <br>
+        <section>
+        <?php include 'includes/form2.inc.html.php'; ?>
+        </section>
         
     </main>
         
@@ -92,6 +77,8 @@ Programmer: Sean Ropp
     
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="scripts/burger.js"></script>
+<script src="scripts/gallery.js"></script>    
 
+</div>
 </body>
 </html>
