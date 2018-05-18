@@ -8,7 +8,7 @@ try
 catch (PDOException $e)
 {
   $error = 'Unable to connect to the database server.';
-  include 'includes/error.html.php';
+  include '../includes/error.html.php';
   exit();
 }
 /*
@@ -33,6 +33,6 @@ while ($row = $result->fetch())
   );
 }
 */
-include 'home.html.php';
+include 'faqs.html.php';
 
 ?>

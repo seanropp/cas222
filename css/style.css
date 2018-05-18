@@ -37,14 +37,23 @@ MOBILE STYLESHEET
 The following CSS affects all mobile devices.
 
 */
+body.home a.home,
+body.faqs a.faqs,
+body.register a.register,
+body.contact a.contact {
+  background-color: #d90600;
+  color: #ffffff;
+}
 body {
   font-family: "Open Sans", 'Arial', 'Helvetica', sans-serif;
   font-size: 16px;
   line-height: 1.5em;
   background-color: #ffffff;
   color: #000000;
+  /* Add an active class to highlight the current page */
 }
 nav {
+  font-size: 18px;
   position: fixed !important;
   top: 0;
   width: 100%;
@@ -75,18 +84,15 @@ nav {
   background-color: #ddd;
   color: black;
 }
-/* Add an active class to highlight the current page */
-.active {
-  background-color: #d90600;
-  color: white;
-}
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
   display: none;
 }
-header {
-  background-size: cover;
-  padding: .5em;
+header .img2 {
+  padding-top: 65px;
+}
+header .img1 {
+  padding-top: 65px;
 }
 header h1 {
   font-family: 'Arial', sans-serif;
@@ -100,7 +106,12 @@ header h1 {
 }
 h1 {
   margin-top: 10px;
-  padding-top: 1em;
+  margin-bottom: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-weight: bold;
+  font-size: 3em;
+  overflow: hidden;
 }
 main {
   margin-top: 10px;
@@ -108,6 +119,7 @@ main {
   margin-right: 12px;
   margin-bottom: 10px;
   padding-bottom: 1em;
+  /* List Code */
   /* SLIDESHOW CODE */
   /* Position the image container (needed to position the left and right arrows) */
   /* Hide the images by default */
@@ -121,28 +133,50 @@ main {
   /* Add a transparency effect for thumnbail images */
 }
 main h2 {
+  font-size: 2em;
+  font-weight: bold;
+  overflow: hidden;
+  line-height: normal;
+  padding-top: 25xp;
+  padding-bottom: 25px;
+  margin: auto;
+}
+main h3 {
   font-size: 1.5em;
   font-weight: bold;
+  overflow: hidden;
+  line-height: normal;
+  padding-top: 25xp;
+  padding-bottom: 25px;
+  margin: auto;
 }
 main p {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 main table {
-  width: 100%;
+  min-width: 60%;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 main table#t01 {
   border: 1px solid #000000;
   border-collapse: collapse;
 }
-main table#t02 {
-  border: none;
-  border-collapse: collapse;
+main caption {
+  text-align: left;
+  font-weight: bold;
 }
 main th,
 main td {
   padding: 5px;
   text-align: left;
+  font-size: 1em;
+}
+main #mysubmit {
+  font-size: 1em;
+  text-align: center;
 }
 main table#t01 tr:nth-child(even) {
   background-color: #ddd;
@@ -157,12 +191,20 @@ main table#t01 th {
 main textarea {
   vertical-align: top;
 }
+main ul {
+  padding-left: 50px;
+  list-style-type: square;
+}
 main dt {
   font-weight: bold;
-  text-indent: 10px;
 }
 main dl {
-  text-indent: 35px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+main .img3 {
+  margin: 5px;
+  padding: 5px;
 }
 main * {
   box-sizing: border-box;
@@ -240,11 +282,20 @@ footer {
   background-color: #000000;
   padding-top: 1.5em;
   padding-bottom: 1.5em;
-  padding-left: 12px;
-  overflow: hidden;
-}
-footer p {
+  padding-left: 15px;
+  padding-right: 15px;
   color: #ffffff;
+  position: sticky;
+  width: 100%;
+  height: auto;
+  top: auto;
+  bottom: auto;
+}
+footer img {
+  background-color: #ffffff;
+  max-height: 30px;
+  max-width: 30px;
+  margin-left: 15px;
 }
 /*
 
@@ -253,12 +304,17 @@ PHONE STYLESHEET
 The following CSS affects all screen sizes larger than 480 pixels wide.
 
 */
-@media only screen and (max-width: 481px) {
+@media only screen and (max-width: 480px) {
   body {
     font-size: 16px;
     line-height: 1.75em;
     /* When the screen is less than 481 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
     /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  }
+  body .topnav .img2 {
+    float: left;
+    height: 55px;
+    width: auto;
   }
   body .topnav a:not(:first-child) {
     display: none;
@@ -280,22 +336,25 @@ The following CSS affects all screen sizes larger than 480 pixels wide.
     display: block;
     text-align: left;
   }
-  main {
-    /* save for possible use
-            img {
-                float: right;
-                max-width: 250px;
-                margin-left: 1em;
-            } */
-  }
   main .prev,
   main .next,
   main .text {
     font-size: 11px;
   }
-  footer {
-    padding-left: 2em;
+  main .img2 {
+    display: none;
   }
+  /*footer {
+            padding-left: 50px;
+            padding-right: 50px;
+            span {
+                display: table;
+                margin: auto;
+            }
+            a {
+                display: inline-table;
+            }
+        }*/
 }
 /*
 
@@ -304,12 +363,26 @@ DESKTOP STYLESHEET
 The following CSS affects all screen sizes larger than 1024 pixels wide.
 
 */
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 481px) {
   body {
     font-size: 18px;
     line-height: 1.75em;
   }
+  body .topnav .img2 {
+    display: none;
+  }
+  body main .img2 {
+    float: left;
+    max-width: 250px;
+  }
+  body main section .img3 {
+    float: right;
+    max-width: 350px;
+  }
   body footer {
-    padding-left: 2.5em;
+    text-align: left;
+  }
+  body footer img {
+    float: right;
   }
 }
