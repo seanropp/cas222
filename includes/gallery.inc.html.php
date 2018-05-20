@@ -1,19 +1,19 @@
 <div class="container">
     <div class="mySlides">
         <div class="numbertext">1 / 3</div>
-            <img src="images/example-main-image1.jpg" style="width:100%">
+            <img src="../images/example-main-image1.jpg" style="width:100%">
             <!-- <div class="text">Caption Text</div> -->
     </div>
 
     <div class="mySlides">
         <div class="numbertext">2 / 3</div>
-            <img src="images/example-main-image2.jpg" style="width:100%">
+            <img src="../images/example-main-image2.jpg" style="width:100%">
             <!-- <div class="text">Caption Text</div> -->
     </div>
 
     <div class="mySlides">
         <div class="numbertext">3 / 3</div>
-            <img src="images/example-main-image3.jpg" style="width:100%">
+            <img src="../images/example-main-image3.jpg" style="width:100%">
             <!-- <div class="text">Caption Text</div> -->
     </div>
 
@@ -22,13 +22,13 @@
 
     <div class="row">
         <div class="column">
-            <img class="demo cursor" src="images/example-main-image1.jpg" style="width:100%" onclick="currentSlide(1)">
+            <img class="demo cursor" src="../images/example-main-image1.jpg" style="width:100%" onclick="currentSlide(1)">
         </div>
         <div class="column">
-            <img class="demo cursor" src="images/example-main-image2.jpg" style="width:100%" onclick="currentSlide(2)">
+            <img class="demo cursor" src="../images/example-main-image2.jpg" style="width:100%" onclick="currentSlide(2)">
         </div>
         <div class="column">
-            <img class="demo cursor" src="images/example-main-image3.jpg" style="width:100%" onclick="currentSlide(3)">
+            <img class="demo cursor" src="../images/example-main-image3.jpg" style="width:100%" onclick="currentSlide(3)">
         </div>
     </div>   
 </div>

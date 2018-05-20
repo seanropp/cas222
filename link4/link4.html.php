@@ -14,16 +14,16 @@ Programmer: Sean Ropp
 <title>Site Title</title>
 
 <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
-<link href="css/reset.css" rel="stylesheet" type="text/css">
-<link href="css/generic.css" rel="stylesheet" type="text/css">
-<link href="css/grid.css" rel="stylesheet" type="text/css">
-<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="../css/reset.css" rel="stylesheet" type="text/css">
+<link href="../css/generic.css" rel="stylesheet" type="text/css">
+<link href="../css/grid.css" rel="stylesheet" type="text/css">
+<link href="../css/style.css" rel="stylesheet" type="text/css">
 
 </head>
 
 <body>
 <div class="main">
-    <?php include 'includes/nav.inc.html.php'; ?>
+    <?php include '../includes/nav.inc.html.php'; ?>
     
     <header>
         <h1>Heading 1</h1>
@@ -34,29 +34,14 @@ Programmer: Sean Ropp
         <p>
         Paragraph.
         </p>
-        <p>
-        Paragraph.
-        </p>
-        
+      
+        <br>
+        <hr>
+        <br>
         <section>
-            <?php include 'includes/tables.inc.html.php'; ?>
+            <h2>Register Form</h2>
+        <?php include '../includes/form2.inc.html.php'; ?>
         </section>
-        
-        <br>
-        <hr>
-        <br>
-        <h2>Heading 2</h2>
-        <p>
-        Paragraph.
-        </p>
-        
-        <br>
-        <hr>
-        <br>
-        <h2>Heading 2</h2>
-        <p>
-        Paragraph.
-        </p>
         
     </main>
         
@@ -67,8 +52,8 @@ Programmer: Sean Ropp
     </footer>
     
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="scripts/burger.js"></script>
-<script src="scripts/gallery.js"></script>    
+<script src="../scripts/burger.js"></script>
+<script src="../scripts/gallery.js"></script>    
 
 </div>
 </body>

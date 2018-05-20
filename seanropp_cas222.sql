@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 18, 2018 at 07:40 PM
+-- Generation Time: May 20, 2018 at 09:47 PM
 -- Server version: 10.1.28-MariaDB
 -- PHP Version: 7.0.24
 
@@ -25,10 +25,10 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `link1`
+-- Table structure for table `contact_form`
 --
 
-CREATE TABLE `link1` (
+CREATE TABLE `contact_form` (
   `id` int(11) NOT NULL,
   `name` text,
   `email` text,
@@ -37,23 +37,50 @@ CREATE TABLE `link1` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `link1`
+-- Dumping data for table `contact_form`
 --
 
-INSERT INTO `link1` (`id`, `name`, `email`, `party`, `comment`) VALUES
-(1, 'asf', NULL, NULL, NULL),
-(2, 'asf', NULL, NULL, NULL),
-(3, 'fndsfngfg', 'ngxszgnszg', 'xsgfnsgnszg', 'znzcvnznngshawerhjmasrnjma'),
-(4, 'fndsfngfg', 'ngxszgnszg', 'xsgfnsgnszg', 'znzcvnznngshawerhjmasrnjma');
+INSERT INTO `contact_form` (`id`, `name`, `email`, `party`, `comment`) VALUES
+(1, 'Sean', 'email here', '123456', 'Something written here.');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `register_form`
+--
+
+CREATE TABLE `register_form` (
+  `id` int(11) NOT NULL,
+  `name` text,
+  `email` text,
+  `number` text,
+  `choice` text,
+  `events` text,
+  `name2` text,
+  `number2` text
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `register_form`
+--
+
+INSERT INTO `register_form` (`id`, `name`, `email`, `number`, `choice`, `events`, `name2`, `number2`) VALUES
+(1, 'Sean Ropp', 'email here', '12345678', 'Option 1', 'Word One', 'Other Name', '12345678');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `link1`
+-- Indexes for table `contact_form`
 --
-ALTER TABLE `link1`
+ALTER TABLE `contact_form`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `register_form`
+--
+ALTER TABLE `register_form`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -61,10 +88,16 @@ ALTER TABLE `link1`
 --
 
 --
--- AUTO_INCREMENT for table `link1`
+-- AUTO_INCREMENT for table `contact_form`
 --
-ALTER TABLE `link1`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+ALTER TABLE `contact_form`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `register_form`
+--
+ALTER TABLE `register_form`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -15,12 +15,12 @@
                     <td><input type="text" name="email" id="email"></td>
                 </tr>
                 <tr>
-                    <td><label for="phone_number">Number:</label></td>
-                    <td><input type="text" name="phone_number" id="phone_number" placeholder="XXX-XXX-XXXX"></td>
+                    <td><label for="number">Number:</label></td>
+                    <td><input type="text" name="number" id="number" placeholder="XXX-XXX-XXXX"></td>
                 </tr>
                 <tr>
-                    <td><label for="athlete_or_volunteer">Make a Choice?:</label></td>
-                    <td><input type="text" name="athlete_or_volunteer" id="athlete_or_volunteer" list="participent">
+                    <td><label for="choice">Make a Choice?:</label></td>
+                    <td><input type="text" name="choice" id="choice" list="participent">
                             <datalist id="participent">
                                 <option value="Option 1">
                                 <option value="Option 2">
@@ -39,12 +39,12 @@
                     </td>
                 </tr>
                 <tr>
-                    <td><label for="emergency_contact_name">Name:</label></td>
-                    <td><input type="text" name="emergency_contact_name" id="emergency_contact_name" required></td>
+                    <td><label for="name2">Name:</label></td>
+                    <td><input type="text" name="name2" id="name2" required></td>
                 </tr>
                 <tr>
-                    <td><label for="emergency_phone_number">Number:</label></td>
-                    <td><input type="text" name="emergency_phone_number" id="emergency_phone_number" placeholder="XXX-XXX-XXXX"></td>
+                    <td><label for="number2">Number:</label></td>
+                    <td><input type="text" name="number2" id="number2" placeholder="XXX-XXX-XXXX"></td>
                 </tr>
             </table>
                     <input id="mysubmit" type="submit" value="Submit">
