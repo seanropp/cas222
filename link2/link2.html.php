@@ -1,5 +1,5 @@
 <!-- 
-File Name: link2.html.php
+File Name: home.html.php
 Date: 05/02/18
 Programmer: Sean Ropp
 -->
@@ -14,16 +14,16 @@ Programmer: Sean Ropp
 <title>Site Title</title>
 
 <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
-<link href="../css/reset.css" rel="stylesheet" type="text/css">
-<link href="../css/generic.css" rel="stylesheet" type="text/css">
-<link href="../css/grid.css" rel="stylesheet" type="text/css">
-<link href="../css/style.css" rel="stylesheet" type="text/css">
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/generic.css" rel="stylesheet" type="text/css">
+<link href="css/grid.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
 
 </head>
 
 <body>
 <div class="main">
-    <?php include '../includes/nav.inc.html.php'; ?>
+    <?php include 'includes/nav.inc.html.php'; ?>
     
     <header>
         <h1>Heading 1</h1>
@@ -32,36 +32,21 @@ Programmer: Sean Ropp
     <main>
         <h2>Heading 2</h2>
         <p>
-        Paragraph.
+        Paragraph, or Content.
         </p>
-        <dt>Question</dt>
-                <dl>Answer</dl>
-            <br>
-        <dt>Question</dt>
-                <dl>Answer</dl>
-            <br>
-        <dt>Question</dt>
-                <dl>Answer</dl>
-            <br>
-        <dt>Question</dt>
-                <dl>Answer</dl>
-            <br>
-        <dt>Question</dt>
-                <dl>Answer</dl>
-            <br>
-        <dt>Question</dt>
-                <dl>Answer</dl>
-            <br>
-        <br>
-        <hr>
+        <p>
+        Paragraph, or Content.
+        </p>
         <br>
         <h2>Heading 2</h2>
         <p>
-        Paragraph.
+        Paragraph, or Content.
         </p>
-        <section>
-            <?php include '../includes/gallery.inc.html.php'; ?>
-        </section>
+        <br>
+        <h2>Heading 2</h2>
+        <p>
+        Paragraph, or Content.
+        </p>
         
     </main>
         
@@ -72,8 +57,8 @@ Programmer: Sean Ropp
     </footer>
     
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="../scripts/burger.js"></script>
-<script src="../scripts/gallery.js"></script>    
+<script src="scripts/burger.js"></script>
+<script src="scripts/gallery.js"></script>    
 
 </div>
 </body>

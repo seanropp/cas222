@@ -26,36 +26,26 @@ Programmer: Sean Ropp
     <?php include 'includes/nav.inc.html.php'; ?>
     
     <header>
-        <h1>Heading 1</h1>
+        <h1>Heading 1/Hero Image</h1>
     </header>
     
     <main>
         <h2>Heading 2</h2>
         <p>
-        Paragraph.
+        Paragraph, or Content.
         </p>
         <p>
-        Paragraph.
+        Paragraph, or Content.
         </p>
-        
-        <section>
-            <?php include 'includes/tables.inc.html.php'; ?>
-        </section>
-        
-        <br>
-        <hr>
         <br>
         <h2>Heading 2</h2>
         <p>
-        Paragraph.
+        Paragraph, or Content.
         </p>
-        
-        <br>
-        <hr>
         <br>
         <h2>Heading 2</h2>
         <p>
-        Paragraph.
+        Paragraph, or Content.
         </p>
         
     </main>
