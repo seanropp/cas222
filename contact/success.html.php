@@ -20,15 +20,14 @@ Programmer: Sean Ropp
 <link href="../css/style.css" rel="stylesheet" type="text/css">
 </head>
     
-<body>
+<body class="contact">
 <div class="main">
-    <?php include '../includes/nav.inc.html.php'; ?>
-        <header>
-            <h1>Database TEST</h1>
-        </header>
+    <?php include '../includes/nav2.inc.html.php'; ?>
+    <?php include '../includes/header2.inc.html.php'; ?>
+        
         <main>
-            <h2>Success!</h2>
-            <p>You successfully sent data to the database.</p>
+            <h2>Your Message has been sent!</h2>
+            <p>You can expect a reply as soon as we are able to read your message.</p>
             <p>
                 Name: <?php echo htmlspecialchars($name, ENT_QUOTES, 'UTF-8'); ?><br>
                 Email: <?php echo htmlspecialchars($email, ENT_QUOTES, 'UTF-8'); ?><br>
@@ -36,13 +35,10 @@ Programmer: Sean Ropp
                 Comment: <?php echo htmlspecialchars($comment, ENT_QUOTES, 'UTF-8'); ?><br>
             </p>
         </main>
-    <footer>
 
-        <p>Social Media Links</p>
-        
-    </footer>
+    <?php include '../includes/footer2.inc.html.php'; ?>
     
-<script src="../https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="../scripts/burger.js"></script>
 <script src="../scripts/gallery.js"></script>    
 

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 20, 2018 at 09:47 PM
+-- Generation Time: May 31, 2018 at 09:46 PM
 -- Server version: 10.1.28-MariaDB
 -- PHP Version: 7.0.24
 
@@ -41,7 +41,8 @@ CREATE TABLE `contact_form` (
 --
 
 INSERT INTO `contact_form` (`id`, `name`, `email`, `party`, `comment`) VALUES
-(1, 'Sean', 'email here', '123456', 'Something written here.');
+(1, 'Sean', 'email here', '123456', 'Something written here.'),
+(2, 'Sean Ropp', 'asgadfhadfh', 'Athlete', 'sjgdhzdf');
 
 -- --------------------------------------------------------
 
@@ -53,19 +54,20 @@ CREATE TABLE `register_form` (
   `id` int(11) NOT NULL,
   `name` text,
   `email` text,
-  `number` text,
-  `choice` text,
+  `phone_number` text,
+  `athlete_or_volunteer` text,
   `events` text,
-  `name2` text,
-  `number2` text
+  `emergency_contact_name` text,
+  `emergency_phone_number` text
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `register_form`
 --
 
-INSERT INTO `register_form` (`id`, `name`, `email`, `number`, `choice`, `events`, `name2`, `number2`) VALUES
-(1, 'Sean Ropp', 'email here', '12345678', 'Option 1', 'Word One', 'Other Name', '12345678');
+INSERT INTO `register_form` (`id`, `name`, `email`, `phone_number`, `athlete_or_volunteer`, `events`, `emergency_contact_name`, `emergency_phone_number`) VALUES
+(1, 'Sean Ropp', 'email here', '12345678', 'Option 1', 'Word One', 'Other Name', '12345678'),
+(2, 'Sean Ropp', 'sean_ropp@yahoo.com', '1565892', 'Athlete', 'Try-a-Tri', 'Sean Ropp', '95665846843');
 
 --
 -- Indexes for dumped tables
@@ -91,13 +93,13 @@ ALTER TABLE `register_form`
 -- AUTO_INCREMENT for table `contact_form`
 --
 ALTER TABLE `contact_form`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `register_form`
 --
 ALTER TABLE `register_form`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

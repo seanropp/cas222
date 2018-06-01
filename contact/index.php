@@ -15,29 +15,20 @@ catch (PDOException $e)
 if (isset($_POST['name'])) {
     $name = $_POST['name'];
     $email = $_POST['email'];
-    $number = $_POST['number'];
-    $choice = $_POST['choice'];
-    $events = $_POST['events'];
-    $name2 = $_POST['name2'];
-    $number2 = $_POST['number2'];
+    $party = $_POST['party'];
+    $comment = $_POST['comment'];
     
  try {
-        $sql = 'INSERT INTO register_form SET
+        $sql = 'INSERT INTO contact_form SET
         name = :name,
         email = :email,
-        number = :number,
-        choice = :choice,
-        events = :events,
-        name2 = :name2,
-        number2 = :number2';
+        party = :party,
+        comment = :comment';
         $s = $pdo->prepare($sql);
         $s->bindValue(':name', $name);
         $s->bindValue(':email', $email);
-        $s->bindValue(':number', $number);
-        $s->bindValue(':choice', $choice);
-        $s->bindValue(':events', $events);
-        $s->bindValue(':name2', $name2);
-        $s->bindValue(':number2', $number2);
+        $s->bindValue(':party', $party);
+        $s->bindValue(':comment', $comment);
         $s->execute();
     } catch (PDOException $e) {
         $error = 'Error fetching content: ' . $e->getMessage();
@@ -46,7 +37,7 @@ if (isset($_POST['name'])) {
       }
 include 'success.html.php';
   } else {
-      include 'link4.html.php';
+      include 'contact.html.php';
   }
 
 ?>

@@ -1,5 +1,5 @@
 <!-- 
-File Name: link3.html.php
+File Name: home.html.php
 Date: 05/02/18
 Programmer: Sean Ropp
 -->
@@ -11,7 +11,7 @@ Programmer: Sean Ropp
 <meta name="author" content="Sean Ropp, initial-scale=1">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Site Title</title>
+<title>Ace in the Hole</title>
 
 <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
 <link href="../css/reset.css" rel="stylesheet" type="text/css">
@@ -21,36 +21,24 @@ Programmer: Sean Ropp
 
 </head>
 
-<body>
+<body class="register">
 <div class="main">
-    <?php include '../includes/nav.inc.html.php'; ?>
+    <?php include '../includes/nav2.inc.html.php'; ?>
+    <?php include '../includes/header2.inc.html.php'; ?>
     
-    <header>
-        <h1>Heading 1</h1>
-    </header>
     
     <main>
-        <h2>Heading 2</h2>
-        <p>
-        Paragraph.
-        </p>
-        <br>
-        <hr>
-        <br>
+        <h2>Register for an Event</h2>
         <section>
-            <h2>Contact Form</h2>
-            <p>Note that this form is functioning and will upload to server for testing.</p>
-            <?php include '../includes/form.inc.html.php'; ?>
+            <p>Interested in participating?  Please fill out this form to reserve your spot in an upcoming event.</p>
+            <?php include '../includes/reg_form.inc.html.php'; ?>
         </section>
+
+
         
-     
     </main>
         
-    <footer>
-
-        <p>Social Media Links</p>
-        
-    </footer>
+    <?php include '../includes/footer2.inc.html.php'; ?>
     
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="../scripts/burger.js"></script>

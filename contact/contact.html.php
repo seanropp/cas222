@@ -11,7 +11,7 @@ Programmer: Sean Ropp
 <meta name="author" content="Sean Ropp, initial-scale=1">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Site Title</title>
+<title>Ace in the Hole</title>
 
 <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
 <link href="../css/reset.css" rel="stylesheet" type="text/css">
@@ -21,35 +21,24 @@ Programmer: Sean Ropp
 
 </head>
 
-<body>
+<body class="contact">
 <div class="main">
-    <?php include '../includes/nav.inc.html.php'; ?>
+    <?php include '../includes/nav2.inc.html.php'; ?>
+    <?php include '../includes/header2.inc.html.php'; ?>
     
-    <header>
-        <h1>Heading 1</h1>
-    </header>
     
     <main>
-        <h2>Heading 2</h2>
-        <p>
-        Paragraph.
-        </p>
-      
-        <br>
-        <hr>
-        <br>
+         <h2>Contact Us</h2>
         <section>
-            <h2>Register Form</h2>
-        <?php include '../includes/form2.inc.html.php'; ?>
+            <p>Got a question that our FAQ doesn't answer, or maybe a concern?  Please fill out the form below to let us know what is on your mind!</p>
+            <?php include '../includes/con_form.inc.html.php'; ?>
         </section>
+
+
         
     </main>
         
-    <footer>
-
-        <p>Social Media Links</p>
-        
-    </footer>
+    <?php include '../includes/footer2.inc.html.php'; ?>
     
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="../scripts/burger.js"></script>

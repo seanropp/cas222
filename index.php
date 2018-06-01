@@ -11,28 +11,7 @@ catch (PDOException $e)
   include 'includes/error.html.php';
   exit();
 }
-/*
-try
-{
-  $sql = 'SELECT * FROM content';
-  $result = $pdo->query($sql);
-}
-catch (PDOException $e)
-{
-  $error = 'Error fetching page: ' . $e->getMessage();
-  include 'includes/error.html.php';
-  exit();
-}
 
-while ($row = $result->fetch())
-{
-  $content[] = array(
-      'title' => $row['title'],
-      'description' => $row['description'],
-      'image' => $row['image'],
-  );
-}
-*/
-include 'link1/link1.html.php';
+include 'home/home.html.php';
 
 ?>

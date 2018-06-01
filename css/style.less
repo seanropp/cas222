@@ -18,6 +18,13 @@ MOBILE STYLESHEET
 The following CSS affects all mobile devices.
 
 */
+body.home a.home,
+body.faqs a.faqs,
+body.register a.register,
+body.contact a.contact {
+    background-color: @color1;
+    color: @lightcolor;
+}
 
 body {
     font-family: "Open Sans", 'Arial', 'Helvetica', sans-serif;
@@ -25,9 +32,11 @@ body {
     line-height: 1.5em;
     background-color: @lightcolor;
     color: @darkcolor;
+    /* Add an active class to highlight the current page */
 }
 
 nav {
+    font-size: 18px;
     position: fixed !important;
     top: 0;
     width: 100%;
@@ -44,6 +53,7 @@ nav {
     background-color: @darkcolor;
     overflow: hidden;
 }
+
 
 /* Style the links inside the navigation bar */
 .topnav a {
@@ -62,11 +72,7 @@ nav {
     color: black;
 }
 
-/* Add an active class to highlight the current page */
-.active {
-    background-color: @color1;
-    color: white;
-}
+
 
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
@@ -74,10 +80,21 @@ nav {
 }
 
 
-
 header {
-    background-size: cover;
-    padding: .5em;
+    .img2 {
+        padding-top: 35px;
+        min-height: auto;
+        max-height: 289px;
+        display: inline-grid;
+        object-fit: cover;
+    }
+    .img1 {
+        padding-top: 65px;
+        min-height: auto;
+        max-height: 289px;
+        display: inline-grid;
+        object-fit: cover;
+    }
     h1 {
         .headerFontAttributes('Arial', sans-serif; @darkcolor; 2.5em);
     }
@@ -85,42 +102,78 @@ header {
 
 h1 {
     margin-top: 10px;
-    padding-top: 1em;
+    margin-bottom: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    font-size: 3em;
+    overflow: hidden;
+    
 }
 
 main {
-    h2 {
-        font-size: 1.5em;
-        font-weight: bold;
-    }
     margin-top: 10px;
     margin-left: 12px;
     margin-right: 12px;
     margin-bottom: 10px;
     padding-bottom: 1em;
+
+    
+    h2 {
+        font-size: 2em;
+        font-weight: bold;
+        overflow: hidden;
+        line-height: normal;
+        padding-top: 25xp;
+        padding-bottom: 25px;
+        margin: auto;
+    }
+    
+    h3 {
+        font-size: 1.5em;
+        font-weight: bold;
+        overflow: hidden;
+        line-height: normal;
+        padding-top: 25xp;
+        padding-bottom: 25px;
+        margin: auto;
+    }
+
     p {
-        padding-top: 10px;
-        padding-bottom: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 
     table {
-        width:100%;
+        min-width: 60%;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     table#t01 {
         border: 1px solid @darkcolor;
         border-collapse: collapse;
     }
-    
-    table#t02 {
-        border: none;
-        border-collapse: collapse;
+
+    caption {
+        text-align: left;
+        font-weight: bold;
     }
      
     th, td {
         padding: 5px;
         text-align: left;
+        font-size: 1em;
     }
+    
+
+    #mysubmit {
+        font-size: 1em;
+        text-align: center;
+    }
+    
+
     table#t01 tr:nth-child(even) {
         background-color: #ddd;
     }
@@ -136,32 +189,45 @@ main {
         vertical-align: top;
     }
 
+/* List Code */
+
+    ul {
+        padding-left: 50px;
+        list-style-type: square;
+    }
+    
     dt {
         font-weight: bold;
-        text-indent: 10px;
     }
     dl {
-        text-indent: 35px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
-
-  
-
+    
+    .img3 {
+        margin: 5px;
+        padding: 5px;
+    }
+    
+    
+    
 /* SLIDESHOW CODE */
 * {
   box-sizing: border-box;
 }
 
-img {
+.imgSlide {
   vertical-align: middle;
     width: 100%;
 }
 
 /* Position the image container (needed to position the left and right arrows) */
 .container {
-  position: relative;
+    position: relative;
     margin:0 auto;
     padding: 15px;
     max-width: 720px;
+    background-color: @darkcolor;
 }
 
 /* Hide the images by default */
@@ -197,6 +263,10 @@ img {
   border-radius: 3px 0 0 3px;
 }
 
+.prev {
+    left: 0;
+}
+
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
@@ -220,27 +290,10 @@ img {
   color: white;
 }
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+.numbertext {
+    background-color: @lightcolor;
 }
-
-/* Six columns side by side */
-.column {
-  float: left;
-  width: 16.66%;
-}
-
-/* Add a transparency effect for thumnbail images */
-.demo {
-  opacity: 0.6;
-}
-
-.active,
-.demo:hover {
-  opacity: 1;
-}  
+    /*NOTE:  if thumbnails are needed, go to: https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp*/
     
 }
 
@@ -248,10 +301,20 @@ footer {
     background-color: @darkcolor;
     padding-top: 1.5em;
     padding-bottom: 1.5em;
-    padding-left: 12px;
-    overflow: hidden;
-    p {
-        color: @lightcolor;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: @lightcolor;
+    position: sticky;
+    width: 100%;
+    height: auto;
+    top: auto;
+    bottom: auto;
+    
+    img {
+        background-color: @lightcolor;
+        max-height: 30px;
+        max-width: 30px;
+        margin-left: 15px;
     }
 }
 
@@ -264,11 +327,23 @@ The following CSS affects all screen sizes larger than 480 pixels wide.
 
 */
 
-@media only screen and (max-width: 481px) {
+@media only screen and (max-width: 680px) {
+
     body {
         font-size: 16px;
         line-height: 1.75em;        
 
+        header {
+            .img2 {
+                display: none;
+            }
+        }
+        
+    .topnav .img2 {
+        float: left;
+        height: 55px;
+        width: auto;
+    }
 /* When the screen is less than 481 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
         .topnav a:not(:first-child) {display: none;}
         .topnav a.icon {
@@ -291,21 +366,27 @@ The following CSS affects all screen sizes larger than 480 pixels wide.
         
     }
         
-        main {
-            
-/* save for possible use
-            img {
-                float: right;
-                max-width: 250px;
-                margin-left: 1em;
-            } */
 
+    
+        main {
             .prev, .next,.text {font-size: 11px}
             
+            .img2 {
+                display: none;
+            }
+            
         }
-        footer {
-            padding-left: 2em;
-        }
+        /*footer {
+            padding-left: 50px;
+            padding-right: 50px;
+            span {
+                display: table;
+                margin: auto;
+            }
+            a {
+                display: inline-table;
+            }
+        }*/
         
     }
 
@@ -318,15 +399,33 @@ The following CSS affects all screen sizes larger than 1024 pixels wide.
 
 */
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 681px) {
     
     body {
         font-size: 18px;
         line-height: 1.75em;
+
         
+    .topnav .img2 {
+        display: none;
+    }
+        main{
+            .img2 {
+                float: left;
+                max-width: 250px;
+            }
+            section .img3 {
+                float: right;
+                max-width: 350px;
+            }
+            
+        }
 
         footer {
-            padding-left: 2.5em;
+            text-align: left;
+            img {
+                float: right;
+            }
         }
         
     }

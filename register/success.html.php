@@ -20,34 +20,30 @@ Programmer: Sean Ropp
 <link href="../css/style.css" rel="stylesheet" type="text/css">
 </head>
     
-<body>
+<body class="register">
 <div class="main">
-    <?php include '../includes/nav.inc.html.php'; ?>
-        <header>
-            <h1>Database TEST</h1>
-        </header>
+    <?php include '../includes/nav2.inc.html.php'; ?>
+    <?php include '../includes/header2.inc.html.php'; ?>
+    
         <main>
-            <h2>Success!</h2>
-            <p>You successfully sent data to the database.</p>
+            <h2>You have successfully registered!</h2>
+            <p>Mark the date and time, and we'll see you there!</p>
             <p>
                 Name: <?php echo htmlspecialchars($name, ENT_QUOTES, 'UTF-8'); ?><br>
                 E-mail: <?php echo htmlspecialchars($email, ENT_QUOTES, 'UTF-8'); ?><br>
-                Number: <?php echo htmlspecialchars($number, ENT_QUOTES, 'UTF-8'); ?><br>
-                Make a Choice?: <?php echo htmlspecialchars($choice, ENT_QUOTES, 'UTF-8'); ?><br>
-                Word: <?php echo htmlspecialchars($events, ENT_QUOTES, 'UTF-8'); ?><br>
-                Name: <?php echo htmlspecialchars($name2, ENT_QUOTES, 'UTF-8'); ?><br>
-                Number: <?php echo htmlspecialchars($number2, ENT_QUOTES, 'UTF-8'); ?><br>
+                Phone Number: <?php echo htmlspecialchars($phone_number, ENT_QUOTES, 'UTF-8'); ?><br>
+                Athlete or Volunteer?: <?php echo htmlspecialchars($athlete_or_volunteer, ENT_QUOTES, 'UTF-8'); ?><br>
+                Choose Your Event: <?php echo htmlspecialchars($events, ENT_QUOTES, 'UTF-8'); ?><br>
+                Emergency Contact Name: <?php echo htmlspecialchars($emergency_contact_name, ENT_QUOTES, 'UTF-8'); ?><br>
+                Emergency Contact Number: <?php echo htmlspecialchars($emergency_phone_number, ENT_QUOTES, 'UTF-8'); ?><br>
             </p>
         </main>
-    <footer>
 
-        <p>Social Media Links</p>
-        
-    </footer>
+        <?php include '../includes/footer2.inc.html.php'; ?>
     
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="../scripts/burger.js"></script>
-<script src="../scripts/gallery.js"></script>    
+<script src="../scripts/gallery.js"></script>   
 
 </div>
 </body>
