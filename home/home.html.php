@@ -26,8 +26,9 @@ Programmer: Sean Ropp
     <?php include 'includes/nav1.inc.html.php'; ?>
     <?php include 'includes/header1.inc.html.php'; ?>
     
-    
+<div id="fb-root"></div>
     <main>
+    <?php include 'includes/socialmedia.inc.html.php'; ?>
         <section>
             <p>
             Ace in the Hole Multisport Events is proud to offer running and triathlon events to athletes of all shapes and sizes, national origins, sexual orientations and cultural backgrounds. We offer Events for Every Body.
@@ -47,6 +48,8 @@ Programmer: Sean Ropp
             <?php include 'includes/tables.inc.html.php'; ?>
         </section>
         <br>
+        <hr>
+        <br>
         <section>
             <h3>Costs Includes</h3>
             <ul>
@@ -61,12 +64,16 @@ Programmer: Sean Ropp
             </p>    
         </section>
         <br>
+        <hr>
+        <br>
         <section>
             <h3>PACKET PICK UP</h3>
             <p>
             All packet pick up will occur at Why Worry Racing, 123 NW Everett, Portland OR. Packet pick up hours: Thursday 8-5, Friday 9-noon. No day of event packet pick up.
             </p>
         </section>
+        <br>
+        <hr>
         <br>
         <section>
             <h3>What to Bring</h3>
@@ -92,15 +99,55 @@ Programmer: Sean Ropp
             Remember to bring a change of clothing so you can enjoy the post-event festivities.
             </p>
         </section>
-        
+        <br>
+        <hr>
+        <br>
+        <section>
+            <h3>COURSE DETAILS</h3>
+            <p>WATER TEMPERATURE is expected to be between 62 – 66 degrees. The temperature will be taken on Friday and the morning of the race. Wetsuits are recommended. (For daily temperatures, see the bottom of the page.)</p>
+
+            <dt>Long Course SWIM – 1.2mi</dt>
+                <dl>Participants will make two counter-clockwise loops. Large buoys will mark the turn points. Kayakers will be positioned on the water to support the swimmers. Medical support will be present on the beach.</dl>
+            <br>
+            <dt>Long Course BIKE – 58 Miles</dt>
+                <dl>A scenic point-to-point course that travels over gently rolling hills prior to three hard climbs. The bike course will be marked with large directional signage and there will be course marshals at key intersections to help direct you.</dl> 
+            <br>
+            <dt>Long Course RUN – 13.1mi</dt>
+                <dl>A mostly flat loop course on widely paved bike paths that traverse through and around this beautiful and scenic destination resort (two hills total with a minimal elevation gain).</dl>
+            <br>
+            <dt>OLYMPIC SWIM – 1,500 meters</dt>
+                <dl>Participants will make two counter-clockwise loops. Large buoys will mark the turn points. Kayakers will be positioned on the water to support the swimmers. Medical support will be present on the beach.</dl>
+            <br>
+            <dt>OLYMPIC BIKE – 28mi</dt>
+                <dl>A scenic point-to-point course that travels over gently rolling hills. The bike course will be marked with large directional signage and course marshals will be present at key intersections. </dl>
+            <br>
+            <dt>OLYMPIC RUN – 10K</dt>
+                <dl>A mostly flat loop course on widely paved bike paths that traverse through and around this beautiful and scenic destination resort (one hill total with a minimal elevation gain).</dl>
+            <br>
+            <dt>Sprint</dt>
+                <dl>Course will offer a 1-loop 1/2 mile swim, the exact same 28 mile Bike Course as the Olympic distance and a 5km run.</dl>
+            <br>
+            <dt>Try-A-Tri</dt>
+                <dl>This novice race is designed for the first time triathlete, those new to the sport, our Junior Triathletes. The swim is a shorter, more manageable 1/4 mile distance, (instead of the standard 1/2-mile Sprint distance swim), 10 mile bike ride (vs 12 miles and it's a 2 loop course making it very spectator friendly!) and a flat 2 mile run (vs 3 mile sprint course).</dl>
+            <br>
+            <dt>Half-Marathon Course (13.1-miles)</dt>
+                <dl>Half-Marathon event starts and finishes in the Athletes Village to the cheers of the enthusiastic crowd. Once finished, runners can enjoy the finish line festivities, including the Sports &amp; Fitness Expo and live entertainment. Post-race refreshments will be provided and the Awards Ceremony for the Half-Marathon will begin once the results have been certified</dl>
+            <br>
+            <dt>10k COURSE</dt>
+                <dl>The 10K event starts and finishes in the Athletes Village. The paths are approximately 6 ft wide, perfectly paved and wind around through the forest. Each course has only two small hills with a minimal elevation gain to navigate and a fast downhill to flat finish to the roaring cheers of the crowd.</dl>
+        </section>
         
     </main>
-        
+    <?php include 'includes/socialmedia2.inc.html.php'; ?>
+    <?php include 'includes/weather.inc.html.php'; ?>
     <?php include 'includes/footer1.inc.html.php'; ?>
     
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 <script src="scripts/burger.js"></script>
-<script src="scripts/gallery.js"></script>    
+<script src="scripts/gallery.js"></script>  
+<script src="scripts/weather.js"></script>
+<script src="scripts/facebook.js"></script>
 
 </div>
 </body>

@@ -38,11 +38,15 @@ Programmer: Sean Ropp
         
     </main>
         
+    <?php include '../includes/weather.inc.html.php'; ?>
     <?php include '../includes/footer2.inc.html.php'; ?>
     
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 <script src="../scripts/burger.js"></script>
-<script src="../scripts/gallery.js"></script>    
+<script src="../scripts/gallery.js"></script>  
+<script src="../scripts/weather.js"></script>
+<script src="../scripts/facebook.js"></script>   
 
 </div>
 </body>

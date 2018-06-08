@@ -74,10 +74,10 @@ nav {
   float: left;
   display: block;
   color: #f2f2f2;
-  text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  /*min-height: 80px;*/
 }
 /* Change the color of links on hover */
 .topnav a:hover {
@@ -89,14 +89,14 @@ nav {
   display: none;
 }
 header .img2 {
-  padding-top: 35px;
+  padding-top: 38px;
   min-height: auto;
   max-height: 289px;
   display: inline-grid;
   object-fit: cover;
 }
 header .img1 {
-  padding-top: 65px;
+  padding-top: 68px;
   min-height: auto;
   max-height: 289px;
   display: inline-grid;
@@ -138,6 +138,13 @@ main {
   /* Number text (1/3 etc) */
   /* Container for image text */
   /*NOTE:  if thumbnails are needed, go to: https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp*/
+}
+main .socialmedia {
+  float: right;
+  text-align: right;
+}
+main .mediafeeds li {
+  list-style-type: none;
 }
 main h2 {
   font-size: 2em;
@@ -312,10 +319,28 @@ The following CSS affects all screen sizes larger than 480 pixels wide.
   body header .img2 {
     display: none;
   }
+  body .topnav a.home {
+    text-align: right;
+    padding-top: 25;
+    padding-right: 120px;
+  }
+  body .topnav a.faqs {
+    text-align: right;
+    padding-right: 120px;
+  }
+  body .topnav a.register {
+    text-align: right;
+    padding-right: 120px;
+  }
+  body .topnav a.contact {
+    text-align: right;
+    padding-right: 120px;
+  }
   body .topnav .img2 {
     float: left;
-    height: 55px;
-    width: auto;
+    height: 65px;
+    padding-bottom: 10px;
+    padding-left: 10px;
   }
   body .topnav a:not(:first-child) {
     display: none;
@@ -323,6 +348,8 @@ The following CSS affects all screen sizes larger than 480 pixels wide.
   body .topnav a.icon {
     float: right;
     display: block;
+    padding-top: 15px;
+    font-size: 30px;
   }
   body .topnav.responsive {
     position: relative;
@@ -335,7 +362,6 @@ The following CSS affects all screen sizes larger than 480 pixels wide.
   body .topnav.responsive a {
     float: none;
     display: block;
-    text-align: left;
   }
   main .prev,
   main .next,
@@ -345,17 +371,18 @@ The following CSS affects all screen sizes larger than 480 pixels wide.
   main .img2 {
     display: none;
   }
-  /*footer {
-            padding-left: 50px;
-            padding-right: 50px;
-            span {
-                display: table;
-                margin: auto;
-            }
-            a {
-                display: inline-table;
-            }
-        }*/
+  main .socialmedia {
+    display: none;
+  }
+  main table#t01 {
+    font-size: 0.8em;
+  }
+  main #gallery01 {
+    display: none;
+  }
+  .socialmedia2 {
+    text-align: center;
+  }
 }
 /*
 
@@ -379,6 +406,9 @@ The following CSS affects all screen sizes larger than 1024 pixels wide.
   body main section .img3 {
     float: right;
     max-width: 350px;
+  }
+  body .socialmedia2 {
+    display: none;
   }
   body footer {
     text-align: left;

@@ -28,19 +28,36 @@ Programmer: Sean Ropp
         <main>
             <h2>Your Message has been sent!</h2>
             <p>You can expect a reply as soon as we are able to read your message.</p>
-            <p>
-                Name: <?php echo htmlspecialchars($name, ENT_QUOTES, 'UTF-8'); ?><br>
-                Email: <?php echo htmlspecialchars($email, ENT_QUOTES, 'UTF-8'); ?><br>
-                Party: <?php echo htmlspecialchars($party, ENT_QUOTES, 'UTF-8'); ?><br>
-                Comment: <?php echo htmlspecialchars($comment, ENT_QUOTES, 'UTF-8'); ?><br>
-            </p>
+            <table>
+                <tr>
+                    <td><label for="name">Name:</label></td>
+                    <td><?php echo htmlspecialchars($name, ENT_QUOTES, 'UTF-8'); ?></td>
+                </tr>
+                <tr>
+                    <td><label for="email">E-Mail:</label></td>
+                    <td><?php echo htmlspecialchars($email, ENT_QUOTES, 'UTF-8'); ?></td>
+                </tr>
+                <tr>
+                    <td><label for="party">Are you an Athlete, Volunteer, or Other Interested Party:</label></td>
+                    <td><?php echo htmlspecialchars($party, ENT_QUOTES, 'UTF-8'); ?></td>
+                </tr>
+                <tr>
+                    <td><label for="comment">Questions or Comments:</label></td>
+                    <td><?php echo htmlspecialchars($comment, ENT_QUOTES, 'UTF-8'); ?></td>
+                </tr> 
+            </table>
+
         </main>
 
+    <?php include '../includes/weather.inc.html.php'; ?>
     <?php include '../includes/footer2.inc.html.php'; ?>
     
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 <script src="../scripts/burger.js"></script>
-<script src="../scripts/gallery.js"></script>    
+<script src="../scripts/gallery.js"></script>  
+<script src="../scripts/weather.js"></script>
+<script src="../scripts/facebook.js"></script>  
 
 </div>
 </body>

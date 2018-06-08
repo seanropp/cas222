@@ -65,19 +65,23 @@ Programmer: Sean Ropp
         <br>
         <hr>
         <br>
-        <section>
+        <section id="gallery01">
             <h3>Image Gallery</h3>
             <p>Here are images from other events put on by Ace in the Hole.</p>
             <?php include '../includes/gallery.inc.html.php'; ?>
         </section>
         
     </main>
-        
+    
+    <?php include '../includes/weather.inc.html.php'; ?>
     <?php include '../includes/footer2.inc.html.php'; ?>
     
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 <script src="../scripts/burger.js"></script>
-<script src="../scripts/gallery.js"></script>    
+<script src="../scripts/gallery.js"></script>  
+<script src="../scripts/weather.js"></script>
+<script src="../scripts/facebook.js"></script>
 
 </div>
 </body>
